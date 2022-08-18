@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    @apply font-montserrat
+}
+/* utilities */
+.active{
+    font-weight: 600;
+}
+.wrapper{
+    @apply w-full h-full mt-20
+}
+.container{
+    @apply w-[85%] lg:w-[80%] h-full mx-auto
+}
+.line{
+    @apply w-[25px] h-[2px] bg-white mt-2 lg:ml-2 group-hover:w-[40px] transition-all duration-500
+}
+.zoom-effect{
+    @apply overflow-hidden relative cursor-pointer
+}
+.zoomed{
+    @apply absolute group-hover:scale-110 transition-all duration-500
+}
+.section-title{
+    @apply text-base lg:text-lg font-normal
+}
+.section-desc{
+    @apply text-2xl font-semibold lg:text-3xl mt-2
+}
+.cover-full{
+    @apply h-full w-full object-cover
+}
+/* content styles */
+.nav-menu{
+    @apply py-2 px-5 lg:p-0 text-gray hover:font-semibold
+}
+.desc-text{
+    @apply text-sm text-white font-extralight
+}
+.room-title{
+    @apply text-base lg:text-xl font-light text-white absolute p-4 flex h-full
+}
+.header{
+    @apply flex fixed w-full h-20 top-0 bg-white z-50
+}
+.header-decoration{
+    @apply absolute top-0 left-0 w-[100px] lg:w-[180px]
+}
+.navbar{
+    @apply relative flex w-[85%] lg:w-[80%] h-full mx-auto border-b border-border justify-center lg:justify-between items-center lg:px-1
+}
+.nav-title{
+    @apply w-40 absolute lg:static text-main text-2xl lg:text-3xl
+}
+.navigation{
+    @apply absolute lg:flex h-full w-full lg:w-1/2 lg:relative
+}
+.toggler{
+    @apply lg:hidden w-full flex justify-end items-center mx-2
+}
+.nav_toggle{
+    @apply text-gray text-3xl cursor-pointer z-10
+}
+.grid-hero{
+    @apply grid grid-cols-1 justify-between lg:grid-cols-6 gap-2
+}
+.grid-hero .col-hero:nth-child(1){
+    @apply col-span-3 flex flex-col items-center justify-center lg:items-start h-80 lg:h-[580px]
+}
+.grid-hero .col-hero:nth-child(2){
+    @apply col-span-3 flex items-center justify-center lg:justify-end h-80 lg:h-[580px]
+}
+.col-hero:nth-child(1) h1{
+    @apply text-3xl lg:text-5xl text-main mb-4 lg:mb-7 text-center lg:text-left
+}
+.col-hero:nth-child(1) p{
+    @apply text-sm text-center lg:text-sm lg:text-left mb-5 lg:mb-7
+}
+.col-hero:nth-child(1) .btn-group{
+    @apply flex w-full justify-center items-center lg:justify-start
+}
+.col-hero:nth-child(2) img{
+    @apply w-[320px] lg:w-[500px]
+}
+.sec-services{
+    @apply py-10 lg:py-16 bg-main
+}
+.grid-services{
+    @apply grid grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-9 mt-7 lg:mt-10
+}
+.services-items{
+    @apply flex flex-col lg:flex-row lg:items-center
+}
+.services-items h4{
+    @apply text-lg text-white font-semibold
+}
+.galery-title{
+    @apply w-full lg:w-1/2
+}
+.galery-title h2{
+    @apply text-main text-3xl font-semibold lg:text-5xl mb-5
+}
+.galery-title p{
+    @apply text-gray text-sm lg:text-base font-normal
+}
+.grid-galery{
+    @apply grid grid-cols-1 md:grid-cols-10 gap-2 lg:gap-4 mt-12
+}
+.grid-galery .col-galery:nth-child(1){
+    @apply w-full lg:h-[600px] h-40 lg:col-span-4 bg-slate-300 rounded md:rounded-none
+}
+.grid-galery .col-galery:nth-child(2){
+    @apply lg:h-[600px] lg:col-span-6 grid grid-cols-1 md:grid-cols-9 md:grid-rows-3 gap-2 lg:gap-4
+}
+.circled-pic{
+    @apply h-40 md:h-auto rounded md:rounded-none
+}
+.btn-contact-now{
+    @apply w-full h-full flex justify-center md:justify-start p-4
+}
+.btn-contact-now a{
+    @apply bg-main p-2 px-3 text-xs text-white self-center md:self-end absolute
+}
+.grid-project{
+    @apply grid grid-cols-1 gap-8 lg:gap-10 lg:grid-cols-9 mt-10
+}
+.project-items{
+    @apply flex flex-col items-center lg:items-start
+}
+.project-items h4{
+    @apply text-lg text-main font-semibold mt-5
+}
+.project-items p{
+    @apply mt-3 text-sm text-main text-center lg:text-start
+}
+.about{
+    @apply flex flex-col lg:flex-row justify-between w-full h-full lg:h-[500px]
+}
+.about-banner{
+    @apply lg:w-[45%] grid grid-cols-5 gap-3 md:gap-5 relative
+}
+.about article{
+    @apply w-[95%] mx-auto lg:w-[40%] flex flex-col justify-center mt-10 md:mt-0
+}
+.grid-testi{
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4
+}
+.testi-card{
+    @apply border border-slate-300 p-8 md:px-10
+}
+.testi-card p{
+    @apply text-gray font-medium text-sm mt-3 mb-4 tracking-wide
+}
+.contact-now-card{
+    @apply rounded-md overflow-hidden w-full h-[200px] md:h-72 flex items-center justify-center relative
+}
+.contact-now-card .btn-group{
+    @apply absolute flex flex-col items-center
+}
+.contact-now-card .btn-group h3{
+    @apply font-semibold text-xl md:text-3xl text-white text-center px-5
+}
+.contact-now-card .btn-group a{
+    @apply p-2 md:p-2 md:px-3 text-main text-xs md:text-sm bg-slate-200 mt-5 rounded-md
+}
+.footer{
+    @apply w-full bg-main
+}
+.grid-footer{
+    @apply grid grid-cols-1 md:grid-cols-2 md:gap-10
+}
+.grid-footer .col-footer:nth-child(1){
+    @apply py-10 md:py-20
+}
+.grid-footer .col-footer:nth-child(2){
+    @apply flex pb-10 md:py-20
+}
+.footer-nav:nth-child(1){
+    @apply w-1/2 flex md:justify-center items-center
+}
+.footer-nav:nth-child(1) ul{
+    @apply text-xs text-slate-100  font-extralight
+}
+.footer-nav:nth-child(2){
+    @apply w-1/2 flex md:justify-center
+}
+.footer-nav:nth-child(2) ul{
+    @apply text-xs text-slate-100  font-extralight
+}

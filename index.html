@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="stylesheet" href="src/input.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <title>Katsuroom - Interior Design Company</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="assets/Group 4.svg" class="header-decoration" />
+    <nav class="navbar">
+      <div class="nav-title"><span class="font-semibold">Katsu</span><span>room.</span></div>
+      <div class="navigation">
+        <ul id="myNav"
+          class="main_nav absolute flex-col w-full bg-white shadow rounded mt-[82px] justify-between py-3 lg:flex lg:flex-row lg:shadow-none lg:items-center lg:h-full lg:p-0 lg:mt-0 hidden">
+          <a href="#">
+            <li class="nav-menu active">
+              Home
+            </li>
+          </a>
+          <a href="#services">
+            <li class="nav-menu">
+              Service
+            </li>
+          </a>
+          <a href="#project">
+            <li class="nav-menu">
+              Projects
+            </li>
+          </a>
+          <a href="#about">
+            <li class="nav-menu">
+              About Us
+            </li>
+          </a>
+          <a href="#contact">
+            <li class="nav-menu">
+              Contact Us
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="toggler">
+        <i class="bx bx-filter nav_toggle"></i>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="container mb-10">
+      <section id="welcomePage" class="grid-hero">
+        <div class="col-hero">
+          <h1>
+            <span class="font-bold">Comfortable</span>
+            <div>
+              <span>space as</span>
+              <span class="font-semibold">Desire</span>
+            </div>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            molestias exercitationem delectus ipsa necessitatibus libero
+            facere eius, accusamus doloribus harum!
+          </p>
+          <div class="btn-group">
+            <div><a href="#project" class="block text-xs py-2 px-3 text-white bg-main">View Project</a></div>
+            <div><a href="#" class="flex items-center text-xs py-2 px-3"><i
+                  class='bx bx-play-circle text-main text-2xl mr-1'></i>Watch Video</a></div>
+          </div>
+        </div>
+        <div class="col-hero">
+          <img src="assets/Group 6.svg">
+        </div>
+      </section>
+    </div>
+    <section id="services">
+      <div class="sec-services">
+        <div class="container flex flex-col justify-center">
+          <div>
+            <span class="section-title text-white">Benefit</span>
+            <h2 class="section-desc text-white">What benefits you will get</h2>
+          </div>
+          <div class="grid-services">
+            <div class="col-span-3 group">
+              <div class="services-items">
+                <h4>Free Consultation</h4>
+                <div class="line"></div>
+              </div>
+              <div class="mt-4">
+                <span class="desc-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?</span>
+              </div>
+            </div>
+            <div class="col-span-3 group">
+              <div class="services-items">
+                <h4>Best Pricing</h4>
+                <div class="line"></div>
+              </div>
+              <div class="mt-4">
+                <span class="desc-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?</span>
+              </div>
+            </div>
+            <div class="col-span-3 group">
+              <div class="services-items">
+                <h4>Best Services</h4>
+                <div class="line"></div>
+              </div>
+              <div class="mt-4">
+                <span class="desc-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-10 lg:mt-20">
+        <div class="galery-title">
+          <h2 class="">The services we provide for you</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. A ipsam exercitationem inventore labore temporibus praesentium quam hic odit fuga ullam!</p>
+        </div>
+        <div class="grid-galery">
+          <div class="col-galery group zoom-effect">
+            <img src="assets/Rectangle 5.svg" class="cover-full zoomed">
+            <div class="btn-contact-now"><a href="#footer">Contact Now</a></div>
+          </div>
+          <div class="col-galery">
+            <a href="" class="circled-pic zoom-effect md:col-span-6 group">
+              <img src="assets/Family Room.svg" class="cover-full zoomed">
+              <div class="room-title"><span class="self-end">Family Room</span></div>
+            </a>
+            <a href="" class="circled-pic zoom-effect md:col-span-3 md:row-span-2 group">
+              <img src="assets/Bedroom.svg" class="cover-full zoomed">
+              <div class="room-title"><span class="self-end">Bedroom</span></div>
+            </a>
+            <a href="" class="circled-pic zoom-effect md:col-span-3 md:row-span-2 group">
+              <img src="assets/Kitchen.svg" class="cover-full zoomed">
+              <div class="room-title"><span class="self-end">Kithen</span></div>
+            </a>
+            <a href="" class="circled-pic zoom-effect md:col-span-3 group">
+              <img src="assets/Studio Room.svg" class="cover-full zoomed">
+              <div class="room-title"><span class="self-end">Studio</span></div>
+            </a>
+            <div class="circled-pic zoom-effect md:col-span-6 group">
+              <img src="assets/Office Room.svg " class="cover-full zoomed">
+              <div class="room-title"><span class="self-end">Office Room</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <div class="py-10">
+        <div class="container flex flex-col justify-center">
+          <div>
+            <span class="section-title text-main">How it works?</span>
+            <h2 class="section-desc text-main">How do we do the projects?</h2>
+          </div>
+          <div class="grid-project">
+            <div class="col-span-3">
+              <article class="project-items">
+                <img src="assets/instruction.svg">
+                <h4>Understand instructions</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?
+                </p>
+              </article>
+            </div>
+            <div class="col-span-3">
+              <article class="project-items">
+                <img src="assets/ideas.svg">
+                <h4>Looking for ideas</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?
+                </p>
+              </article>
+            </div>
+            <div class="col-span-3">
+              <article class="project-items">
+                <img src="assets/execution.svg">
+                <h4>Idea execution</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Fuga incidunt, cum quas assumenda neque dolore placeat minus dicta magnam mollitia?
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="w-[90%] lg:w-[80%] mx-auto">
+        <div class="about">
+          <div class="about-banner">
+            <div class="col-span-2 h-full flex justify-end items-center">
+              <div class="w-[80%] lg:w-[85%] h-[80%] z-10">
+                <img src="assets/smaller.svg" class="w-full h-full rounded">
+              </div>
+            </div>
+            <div class="col-span-3 h-full flex">
+              <div class="w-[85%] h-full z-10">
+                <img src="assets/bigger.svg" class="w-full h-full rounded">
+              </div>
+            </div>
+            <div class="flex w-full h-full absolute">
+              <div class="w-1/2 h-3/5 my-auto">
+                <img src="assets/point.svg">
+              </div>
+              <div class="w-1/2 h-3/5 my-auto flex items-end justify-end">
+                <img src="assets/point.svg">
+              </div>
+            </div>
+          </div>
+          <article>
+            <span class="text-main section-title">About us</span>
+            <h2 class="text-main section-desc">What you want to know<br>about Katsuroom.</h2>
+            <div class="md:w-[90%] text-sm text-main font-normal mt-5">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nobis autem ad esse quisquam iusto
+                hic unde, velit saepe blanditiis? Lorem ipsum dolor sit amet.</p>
+              <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam sunt reprehenderit
+                dignissimos ratione nulla eaque suscipit ea distinctio necessitatibus ipsum. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsum neque possimus sequi non blanditiis expedita obcaecati odit ut id
+                quis?</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="py-10">
+          <span class="section-title text-main">Testimonial</span>
+          <h2 class="section-desc text-main">How is our clients experiences, satisfaction and
+            responses</h2>
+        </div>
+        <!-- Testimoni -->
+        <div class="grid-testi">
+          <div class="testi-card">
+            <img src="assets/Quotes.svg">
+            <img src="assets/Star.svg" class="mt-6">
+            <p>Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Vero nam, maiores repellat corrupti explicabo quis esse. Aspernatur quisquam saepe
+              culpa.
+            </p>
+            <span class="text-slate-600 font-semibold text-lg">Agus Guslim</span>
+          </div>
+          <div class="testi-card">
+            <img src="assets/Quotes.svg">
+            <img src="assets/Star.svg" class="mt-6">
+            <p>Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Vero nam, maiores repellat corrupti explicabo quis esse. Aspernatur quisquam saepe
+              culpa.
+            </p>
+            <span class="text-slate-600 font-semibold text-lg">Asep Jebred</span>
+          </div>
+        </div>
+        <div class="py-10 md:py-20">
+          <div class="contact-now-card">
+            <img src="assets/contactus.svg" class="cover-full absolute">
+            <div class="btn-group">
+              <h3>Feel that we are the right
+                partner?contact us below</h3>
+              <a href="">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer">
+        <div class="container">
+          <div class="grid-footer">
+            <div class="col-footer">
+              <div class="text-slate-100 text-2xl lg:text-3xl"><span
+                  class="font-semibold">Katsu</span><span>room.</span>
+              </div>
+              <div class="text-xs text-slate-100 mt-2 md:mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor libero omnis tempora, placeat
+                recusandae ab aperiam soluta ex quidem.
+              </div>
+              <div class="flex w-4/5 md:w-2/5 justify-between text-white text-2xl mt-8">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+              </div>
+            </div>
+            <div class="col-footer">
+              <div class="footer-nav">
+                <ul>
+                  <li class="pb-5 font-medium text-sm md:text-base">Services</li>
+                  <li class="pb-3"><a href="#">Consultation</a></li>
+                  <li class="pb-3"><a href="#">interior Design</a></li>
+                  <li class="pb-3"><a href="#">Idea Interior</a></li>
+                  <li class="pb-3"><a href="#">Property Project</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav">
+                <ul>
+                  <li class="pb-5 font-medium text-sm md:text-base">Contact Us</li>
+                  <li class="pb-3"><a href="#" class="flex items-center"><img src="assets/Pin.svg" class="w-5 mr-2">
+                      Thronrigde Cir. Syacuse</a></li>
+                  <li class="pb-3"><a href="#" class="flex items-center"><i
+                        class='bx bx-phone-call text-lg mr-2'></i><span>(305) 8247400</span></a></li>
+                  <li class="pb-3"><a href="#" class="flex items-center"><i
+                        class='bx bx-envelope text-lg mr-2'></i><span>katsuroom@katsu.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>
